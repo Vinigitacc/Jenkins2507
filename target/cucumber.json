@@ -1,0 +1,672 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Get User logtoken from login endpoint",
+        "description": "",
+        "id": "login-module-api-automation;get-user-logtoken-from-login-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 539800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should add header",
+            "match": {
+              "location": "LoginStep.userShouldAddHeader()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should add basic authentication for login",
+            "match": {
+              "location": "LoginStep.userShouldAddBasicAuthenticationForLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should send \"POST\" request for login endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginStep.userShouldSendRequestForLoginEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 114000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should verify the statuscode is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "CommonStep.userShouldVerifyTheStatuscodeIs(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should verify the login response body firstName present as \"Vini\" and get the logtoken saved",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Vini\"",
+                  "offset": 64
+                }
+              ],
+              "location": "LoginStep.userShouldVerifyTheLoginResponseBodyFirstNamePresentAsAndGetTheLogtokenSaved(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login Module API Automation",
+    "description": "",
+    "id": "login-module-api-automation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/TC1_Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verify add new address to the aplication through API",
+        "description": "",
+        "id": "address-module-api-automation;verify-add-new-address-to-the-aplication-through-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.stepdefinition.AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints(AddressStep.java:12)\r\n\tat ✽.User add headers and bearer authorization for accessing address endpoints(src/test/resources/Features/TC2_Address.feature:5)\r\n",
+              "duration": 1969500,
+              "status": "pending"
+            },
+            "line": 5,
+            "name": "User add headers and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11400,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user add request body for Add new address \"Vini\",\"Tha\",\"8428502914\",\"apartment\",\"33\",\"3378\",\"101\",\"202020\",\"52\"and \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Vini\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Tha\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"8428502914\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"apartment\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"33\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"3378\"",
+                  "offset": 85
+                },
+                {
+                  "val": "\"101\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"202020\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"52\"",
+                  "offset": 107
+                },
+                {
+                  "val": "\"home\"",
+                  "offset": 115
+                }
+              ],
+              "location": "AddressStep.userAddRequestBodyForAddNewAddressAnd(String,String,String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6300,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User send \"POST\" request for add new address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "AddressStep.userSendRequestForAddNewAddress(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4700,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User should verify the statuscode is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "CommonStep.userShouldVerifyTheStatuscodeIs(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4800,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User verify the create address response message matches \"Address added successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address added successfully\"",
+                  "offset": 56
+                }
+              ],
+              "location": "AddressStep.userVerifyTheCreateAddressResponseMessageMatches(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@address"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Verify Upadate the existing address to the aplication through API",
+        "description": "",
+        "id": "address-module-api-automation;verify-upadate-the-existing-address-to-the-aplication-through-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.stepdefinition.AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints(AddressStep.java:12)\r\n\tat ✽.User add headers and bearer authorization for accessing address endpoints(src/test/resources/Features/TC2_Address.feature:16)\r\n",
+              "duration": 278700,
+              "status": "pending"
+            },
+            "line": 16,
+            "name": "User add headers and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3600,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user add request body for  update address \"Vini\",\"Tha\",\"8428502914\",\"apartment\",\"33\",\"3378\",\"101\",\"202020\",\"52\" and \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Vini\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Tha\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"8428502914\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"apartment\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"33\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"3378\"",
+                  "offset": 85
+                },
+                {
+                  "val": "\"101\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"202020\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"52\"",
+                  "offset": 107
+                },
+                {
+                  "val": "\"home\"",
+                  "offset": 116
+                }
+              ],
+              "location": "AddressStep.userAddRequestBodyForUpdateAddressAnd(String,String,String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3300,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User send \"PUT\" request for  update address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 10
+                }
+              ],
+              "location": "AddressStep.userSendRequestForUpdateAddress(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User should verify the statuscode is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "CommonStep.userShouldVerifyTheStatuscodeIs(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2900,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "User verify the update address response message matches \"Address updated successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address updated successfully\"",
+                  "offset": 56
+                }
+              ],
+              "location": "AddressStep.userVerifyTheUpdateAddressResponseMessageMatches(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@address"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Verify Get the existing address to the aplication through API",
+        "description": "",
+        "id": "address-module-api-automation;verify-get-the-existing-address-to-the-aplication-through-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.stepdefinition.AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints(AddressStep.java:12)\r\n\tat ✽.User add headers and bearer authorization for accessing address endpoints(src/test/resources/Features/TC2_Address.feature:27)\r\n",
+              "duration": 191400,
+              "status": "pending"
+            },
+            "line": 27,
+            "name": "User add headers and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5500,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User send \"GET\" request for get existing address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                }
+              ],
+              "location": "AddressStep.userSendRequestForGetExistingAddress(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5400,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "User should verify the statuscode is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "CommonStep.userShouldVerifyTheStatuscodeIs(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5100,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User verify the get existing address response message matches \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 62
+                }
+              ],
+              "location": "AddressStep.userVerifyTheGetExistingAddressResponseMessageMatches(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@address"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Verify Delete the existing address to the aplication through API",
+        "description": "",
+        "id": "address-module-api-automation;verify-delete-the-existing-address-to-the-aplication-through-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.stepdefinition.AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints(AddressStep.java:12)\r\n\tat ✽.User add headers and bearer authorization for accessing address endpoints(src/test/resources/Features/TC2_Address.feature:33)\r\n",
+              "duration": 196700,
+              "status": "pending"
+            },
+            "line": 33,
+            "name": "User add headers and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5600,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "User send \"DELETE\" request for delete address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 10
+                }
+              ],
+              "location": "AddressStep.userSendRequestForDeleteAddress(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5100,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User should verify the statuscode is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "CommonStep.userShouldVerifyTheStatuscodeIs(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4100,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "User verify the delete address response message matches \"Address deleted successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address deleted successfully\"",
+                  "offset": 56
+                }
+              ],
+              "location": "AddressStep.userVerifyTheDeleteAddressResponseMessageMatches(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@address"
+          }
+        ]
+      }
+    ],
+    "name": "Address Module API automation",
+    "description": "",
+    "id": "address-module-api-automation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/TC2_Address.feature",
+    "tags": [
+      {
+        "name": "@address",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify the changeprofilepic to the application through API",
+        "description": "",
+        "id": "changeprofilepic-module-api-automation;verify-the-changeprofilepic-to-the-application-through-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 80100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should add headers and beared authorization and multipart/form-data for accessing changeprofilepic endpoint",
+            "match": {
+              "location": "ChangeProfilePicStep.userShouldAddHeadersAndBearedAuthorizationAndMultipartFormDataForAccessingChangeprofilepicEndpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User send \"POST\" request address for ChangeProfilePic",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "ChangeProfilePicStep.userSendRequestAddressForChangeProfilePic(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should verify the statuscode is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "CommonStep.userShouldVerifyTheStatuscodeIs(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify the changeprofilepic response message matches with \"Profile Updated Successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Profile Updated Successfully\"",
+                  "offset": 63
+                }
+              ],
+              "location": "ChangeProfilePicStep.userVerifyTheChangeprofilepicResponseMessageMatchesWith(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@change"
+          }
+        ]
+      }
+    ],
+    "name": "ChangeProfilePic Module API Automation",
+    "description": "",
+    "id": "changeprofilepic-module-api-automation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/TC3_ChangeProfilePic.feature",
+    "tags": [
+      {
+        "name": "@change",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
